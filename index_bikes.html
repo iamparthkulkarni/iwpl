@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: skyblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border: thick;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: skyblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Swift Car Rental Services</h1>
+  <h6>Book Bikes, Cars, Bicycles in a snap</h6>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h2><li><a href="/home/a3-403-09/4926/index_bikes.html" style="color: grey">Bikes</a></li></h2>
+      <h2><li><a href="/home/a3-403-09/4926/index.html" style="color: grey">Cars</a></li></h2>
+      <h2><li><a href="/home/a3-403-09/4926/index_bicycles.html" style="color: grey">Bicycles</a></li></h2>
+    </ul>
+  </nav>
+
+
+    <div align="center">
+      <img src="img4.jpeg" alt="Smiley face" height="400" width="400"> 
+      <h4>KTM</h4>
+      <h5>Rent: 500/day</h5>
+    </div>
+
+    <div align="center">
+      <img src="img5.jpg" alt="Smiley face" height="400" width="400"> 
+      <h4>Harley Davidson</h4>
+      <h5>Rent: 700/day</h5>
+    </div>
+
+    <div align="center">
+      <img src="img6.png" alt="Smiley face" height="400" width="400"> 
+      <h4>Pulsar</h4>
+      <h5>Rent: 300/day</h5>
+    </div>
+</section> 
+
+<footer>
+  <h2>Contact Us</h2>
+  <h3>Email: abc@gmail.com</h3>
+  <h3>Contact: +91-8737635915</h3>
+  <h3>164, Cannuaght Place, Delhi</h3>
+</footer>
+
+</body>
+</html>
